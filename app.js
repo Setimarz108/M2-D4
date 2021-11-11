@@ -1,27 +1,30 @@
 
 let addGuest = document.querySelector('.addGuest')
   let list = document.getElementsByClassName('list-group')
-
+let newName = document.querySelector('.guestName').value;
 
 
 const addNewGuest = function(){
 
     addGuest.addEventListener('click', function(){
 
-         let newName = document.querySelector('.guestName').value;
+         
            
-        for(let i = 0; i < list[i].length; i++){
-            
+        for(let i = 0; i < list.length; i++){
+                    
         let newNodeList = document.createElement('li')
         newNodeList.classList.add('list-group-item')
-        newNodeList[i].innerText = newName
-        list.appendChild(newNodeList)
-          
+        newNodeList.textContent = newName
+        list.appendChild()
+
+        console.log(newNodeList)
+         
     }
 
     })
         
 }
+
 
 addNewGuest()
 
