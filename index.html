@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet"> 
+
+    <title>Task generator</title>
+</head>
+<body>
+
+     <h1 class="text-center pt-5">Team generator</h1>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+               
+                <div class="input-group mb-3 mt-5">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">😀</span>
+                    </div>
+                    <input type="text" class="form-control guestName" placeholder="Guest Name" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                 <div class="input-group-append">
+                  <button class="btn btn-outline-secondary addGuest" type="button" id="button-addon2" onclick="addNewGuest()">Add Guest</button>
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">👨🏿‍🤝‍👨🏻</span>
+            </div>
+            <input type="text" class="form-control" placeholder="How many teams?" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+         <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">generate Teams</button>
+         </div>
+
+            </div>
+            <div class="col ">
+                <h2 class="text-center">Waiting List</h2>
+                <ul class="list-group">
+                    <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                  </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col bg-primary">
+                teams generated
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+</body>
+
+<script src="/app.js"></script>
+</html>
