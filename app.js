@@ -8,16 +8,15 @@ const addNewGuest = function(){
 
     addGuest.addEventListener('click', function(){
 
-         
-           
+          
         for(let i = 0; i < list.length; i++){
                     
         let newNodeList = document.createElement('li')
         newNodeList.classList.add('list-group-item')
-        newNodeList.textContent = newName
-        list.appendChild()
+        newNodeList.innerHTML = newName
+        list[i].appendChild(newNodeList)
 
-        console.log(newNodeList)
+        console.log(newNodeList[i])
          
     }
 
